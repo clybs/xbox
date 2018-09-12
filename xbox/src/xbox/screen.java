@@ -16,8 +16,6 @@ public class screen {
                 System.out.print(iteratorCol.next());
             }
             return row;
-        }).forEachOrdered((_item) -> {
-            System.out.println("");
-        });
+        }).forEachOrdered((_item) -> System.out.println(""));
     }
 }
