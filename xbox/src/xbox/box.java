@@ -14,6 +14,9 @@ public class box {
     private String spacer = "x";
     private String borderTopBottom = "-";
     private String borderSides = "|";
+    
+    private final int MIN_COLUMNS = 3;
+    private final int MIN_ROWS = 3;
 
     public String getBorderTopBottom() {
         return borderTopBottom;
@@ -35,6 +38,14 @@ public class box {
         this.columns = columns;
         this.rows = rows;
         this.spacer = spacer;
+        
+        // Check if within boundaries
+        if (this.rows < MIN_ROWS) {
+            this.rows = MIN_ROWS;
+        }
+        if (this.columns < MIN_COLUMNS) {
+            this.columns = MIN_COLUMNS;
+        }
     }
 
     public String getSpacer() {
@@ -51,6 +62,11 @@ public class box {
 
     public void setColumns(int columns) {
         this.columns = columns;
+        
+        // Check if within boundaries
+        if (this.columns < MIN_COLUMNS) {
+            this.columns = MIN_COLUMNS;
+        }
     }
 
     public int getRows() {
@@ -59,6 +75,11 @@ public class box {
 
     public void setRows(int rows) {
         this.rows = rows;
+        
+        // Check if within boundaries
+        if (this.rows < MIN_ROWS) {
+            this.rows = MIN_ROWS;
+        }
     }
 
     private List<ArrayList<String>> createBorder(List<ArrayList<String>> boxContents) {
@@ -102,6 +123,6 @@ public class box {
 
     @Override
     public String toString() {
-        return "box{" + "columns=" + columns + ", rows=" + rows + '}';
+        return "box{" + "columns=" + columns + ", rows=" + rows + ", spacer=" + spacer + ", borderTopBottom=" + borderTopBottom + ", borderSides=" + borderSides + '}';
     }
 }

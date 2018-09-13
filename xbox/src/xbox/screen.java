@@ -10,6 +10,10 @@ import java.util.List;
  */
 public class screen {
 
+    /**
+     *
+     * @param boxContents
+     */
     public void display(List<ArrayList<String>> boxContents) {
         boxContents.stream().map((row) -> {
             for (Iterator<String> iteratorCol = row.iterator(); iteratorCol.hasNext();) {
