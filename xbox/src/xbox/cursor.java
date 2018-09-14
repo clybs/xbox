@@ -135,12 +135,16 @@ public class cursor {
                 if (isNotTouchingBorder) {
                     row.set(j, pointer);
                 }
-
                 j++;
             }
             i++;
         }
 
         return boxContents;
+    }
+
+    @Override
+    public String toString() {
+        return "cursor{" + "borderless=" + borderless + ", pointer=" + pointer + ", xPos=" + xPos + ", yPos=" + yPos + ", xMax=" + xMax + ", yMax=" + yMax + ", boxContents=" + boxContents + '}';
     }
 }

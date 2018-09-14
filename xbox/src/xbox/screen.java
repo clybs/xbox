@@ -3,6 +3,7 @@ package xbox;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Function;
 
 /**
  *
@@ -15,7 +16,7 @@ public class screen {
      * @param boxContents
      */
     public void display(List<ArrayList<String>> boxContents) {
-        boxContents.stream().map((row) -> {
+        boxContents.stream().map((ArrayList<String> row) -> {
             for (Iterator<String> iteratorCol = row.iterator(); iteratorCol.hasNext();) {
                 System.out.print(iteratorCol.next());
             }
