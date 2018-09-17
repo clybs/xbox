@@ -7,7 +7,7 @@ import java.util.List;
  *
  * @author cliburnsolano
  */
-public class box {
+public class Box {
 
     private int columns;
     private int rows;
@@ -34,7 +34,7 @@ public class box {
         this.borderSides = borderSides;
     }
 
-    public box(int columns, int rows, String spacer) {
+    public Box(int columns, int rows, String spacer) {
         this.columns = columns;
         this.rows = rows;
         this.spacer = spacer;
@@ -104,7 +104,7 @@ public class box {
     }
 
     public List<ArrayList<String>> getBox() {
-        // Create the box
+        // Create the Box
         List<ArrayList<String>> boxRow = new ArrayList<>();
 
         for (int j = 0; j < rows; j++) {

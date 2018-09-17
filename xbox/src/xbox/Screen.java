@@ -9,7 +9,7 @@ import java.util.function.Function;
  *
  * @author cliburnsolano
  */
-public class screen {
+public class Screen {
 
     /**
      *

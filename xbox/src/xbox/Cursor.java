@@ -8,7 +8,7 @@ import java.util.List;
  *
  * @author cliburnsolano
  */
-public class cursor {
+public class Cursor {
 
     private boolean borderless = true;
     private String pointer = "X";
@@ -18,7 +18,7 @@ public class cursor {
     private int yMax;
     private List<ArrayList<String>> boxContents;
 
-    public cursor(int xPos, int yPos) {
+    public Cursor(int xPos, int yPos) {
         this.xPos = xPos;
         this.yPos = yPos;
     }

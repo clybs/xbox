@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class Xbox {
 
     private static final Scanner SCANNER = new Scanner(System.in);
-    private static final box MY_BOX = new box(5, 5, " ");
-    private static final screen MY_SCREEN = new screen();
-    private static final cursor MY_CURSOR = new cursor(0, 0);
+    private static final Box MY_BOX = new Box(5, 5, " ");
+    private static final Screen MY_SCREEN = new Screen();
+    private static final Cursor MY_CURSOR = new Cursor(0, 0);
 
     /**
      * @param args the command line arguments
