@@ -120,7 +120,7 @@ public class cursor {
         return sameX && sameY && notTopBorder && notBottomBorder && notLeftBorder && notRightBorder;
     }
 
-    public List<ArrayList<String>> getBoxContents() {
+    public List<ArrayList<String>> getBoxWithCursor() {
         // Place the x in the box
         int i = 0;
 

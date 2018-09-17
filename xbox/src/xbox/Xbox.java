@@ -87,7 +87,7 @@ public class Xbox {
 
                 case 12:
                     MY_CURSOR.setBoxContents(MY_BOX.getBox());
-                    MY_SCREEN.display(MY_CURSOR.getBoxContents());
+                    MY_SCREEN.display(MY_CURSOR.getBoxWithCursor());
                     break;
             }
         }
@@ -150,7 +150,7 @@ public class Xbox {
 
     private static void displayCursor() {
         MY_CURSOR.setBoxContents(MY_BOX.getBox());
-        MY_SCREEN.display(MY_CURSOR.getBoxContents());
+        MY_SCREEN.display(MY_CURSOR.getBoxWithCursor());
     }
 
     private static void intro() {
